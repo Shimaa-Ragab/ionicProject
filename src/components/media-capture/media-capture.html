@@ -1,0 +1,15 @@
+<button ion-button full (click)="captureVideo()">Capture Video</button>
+
+<ion-list>
+  <ion-item *ngFor="let file of mediaFiles" tappable (click)="play(file)" text-wrap>
+    {{ file.name }}
+    <p>{{ file.size / 1000 / 1000 | number }} MB</p>
+  </ion-item>
+</ion-list>
+
+<div data-tap-disable="true" *ngIf="bo_html5  && source!=null">
+<video controls allow="autoplay; encrypted-media" width="560" height="315" allowfullscreen playsinline>
+  <source [src]="source" type="video/mp4"></video>
+</div>
+
+<!-- <iframe width="560" height="315" #myvideo frameborder="0" allow="autoplay; encrypted-media" controls allowfullscreen></iframe> -->
