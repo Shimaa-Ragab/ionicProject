@@ -3,14 +3,13 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
+import { SQLite } from '@ionic-native/sqlite';
 import { MyApp } from './app.component';
-import { Diagnostic } from '../../node_modules/@ionic-native/diagnostic';
 import { BarcodeScanner } from '../../node_modules/@ionic-native/barcode-scanner';
-import { SQLite } from '../../node_modules/@ionic-native/sqlite';
 import { File } from '@ionic-native/file';
 import { MediaCapture } from '../../node_modules/@ionic-native/media-capture';
 import { IonicStorageModule } from '../../node_modules/@ionic/storage';
+import { StreamingMedia } from '@ionic-native/streaming-media';
 
 @NgModule({
   declarations: [
@@ -29,11 +28,11 @@ import { IonicStorageModule } from '../../node_modules/@ionic/storage';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Diagnostic,
     BarcodeScanner,
-    SQLite,
     File,
-    MediaCapture
+    SQLite,
+    MediaCapture,
+    StreamingMedia
   ]
 })
 export class AppModule {}

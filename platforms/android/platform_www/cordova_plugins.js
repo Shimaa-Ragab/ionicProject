@@ -9,134 +9,6 @@ module.exports = [
     ]
   },
   {
-    "id": "cordova-plugin-ionic-keyboard.keyboard",
-    "file": "plugins/cordova-plugin-ionic-keyboard/www/android/keyboard.js",
-    "pluginId": "cordova-plugin-ionic-keyboard",
-    "clobbers": [
-      "window.Keyboard"
-    ]
-  },
-  {
-    "id": "cordova-plugin-ionic-webview.IonicWebView",
-    "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
-    "pluginId": "cordova-plugin-ionic-webview",
-    "clobbers": [
-      "Ionic.WebView"
-    ]
-  },
-  {
-    "id": "cordova-plugin-splashscreen.SplashScreen",
-    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
-    "pluginId": "cordova-plugin-splashscreen",
-    "clobbers": [
-      "navigator.splashscreen"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Location",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.location.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.location"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Bluetooth",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.bluetooth.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.bluetooth"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Wifi",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.wifi.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.wifi"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Camera",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.camera.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.camera"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Notifications",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.notifications.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.notifications"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Microphone",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.microphone.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.microphone"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Contacts",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.contacts.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.contacts"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_Calendar",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.calendar.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.calendar"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_NFC",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.nfc.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.nfc"
-    ]
-  },
-  {
-    "id": "cordova.plugins.diagnostic.Diagnostic_External_Storage",
-    "file": "plugins/cordova.plugins.diagnostic/www/android/diagnostic.external_storage.js",
-    "pluginId": "cordova.plugins.diagnostic",
-    "merges": [
-      "cordova.plugins.diagnostic.external_storage"
-    ]
-  },
-  {
-    "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
-    "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
-    "pluginId": "phonegap-plugin-barcodescanner",
-    "clobbers": [
-      "cordova.plugins.barcodeScanner"
-    ]
-  },
-  {
-    "id": "cordova-sqlite-storage.SQLitePlugin",
-    "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
-    "pluginId": "cordova-sqlite-storage",
-    "clobbers": [
-      "SQLitePlugin"
-    ]
-  },
-  {
     "id": "cordova-plugin-file.DirectoryEntry",
     "file": "plugins/cordova-plugin-file/www/DirectoryEntry.js",
     "pluginId": "cordova-plugin-file",
@@ -310,6 +182,22 @@ module.exports = [
     "runs": true
   },
   {
+    "id": "cordova-plugin-ionic-keyboard.keyboard",
+    "file": "plugins/cordova-plugin-ionic-keyboard/www/android/keyboard.js",
+    "pluginId": "cordova-plugin-ionic-keyboard",
+    "clobbers": [
+      "window.Keyboard"
+    ]
+  },
+  {
+    "id": "cordova-plugin-ionic-webview.IonicWebView",
+    "file": "plugins/cordova-plugin-ionic-webview/src/www/util.js",
+    "pluginId": "cordova-plugin-ionic-webview",
+    "clobbers": [
+      "Ionic.WebView"
+    ]
+  },
+  {
     "id": "cordova-plugin-media-capture.CaptureAudioOptions",
     "file": "plugins/cordova-plugin-media-capture/www/CaptureAudioOptions.js",
     "pluginId": "cordova-plugin-media-capture",
@@ -376,21 +264,53 @@ module.exports = [
     "file": "plugins/cordova-plugin-media-capture/www/android/init.js",
     "pluginId": "cordova-plugin-media-capture",
     "runs": true
+  },
+  {
+    "id": "cordova-plugin-splashscreen.SplashScreen",
+    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+    "pluginId": "cordova-plugin-splashscreen",
+    "clobbers": [
+      "navigator.splashscreen"
+    ]
+  },
+  {
+    "id": "phonegap-plugin-barcodescanner.BarcodeScanner",
+    "file": "plugins/phonegap-plugin-barcodescanner/www/barcodescanner.js",
+    "pluginId": "phonegap-plugin-barcodescanner",
+    "clobbers": [
+      "cordova.plugins.barcodeScanner"
+    ]
+  },
+  {
+    "id": "cordova-sqlite-storage.SQLitePlugin",
+    "file": "plugins/cordova-sqlite-storage/www/SQLitePlugin.js",
+    "pluginId": "cordova-sqlite-storage",
+    "clobbers": [
+      "SQLitePlugin"
+    ]
+  },
+  {
+    "id": "cordova-plugin-streaming-media.StreamingMedia",
+    "file": "plugins/cordova-plugin-streaming-media/www/StreamingMedia.js",
+    "pluginId": "cordova-plugin-streaming-media",
+    "clobbers": [
+      "streamingMedia"
+    ]
   }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
   "cordova-plugin-device": "2.0.2",
+  "cordova-plugin-file": "6.0.1",
   "cordova-plugin-ionic-keyboard": "2.1.2",
   "cordova-plugin-ionic-webview": "2.0.2",
+  "cordova-plugin-media-capture": "3.0.2",
   "cordova-plugin-splashscreen": "5.0.2",
   "cordova-plugin-whitelist": "1.3.3",
-  "cordova.plugins.diagnostic": "4.0.8",
   "phonegap-plugin-barcodescanner": "8.0.0",
-  "cordova-sqlite-storage": "2.3.3",
-  "cordova-plugin-file": "6.0.1",
-  "cordova-plugin-media-capture": "3.0.2"
+  "cordova-sqlite-storage": "2.4.0",
+  "cordova-plugin-streaming-media": "2.1.2"
 };
 // BOTTOM OF METADATA
 });

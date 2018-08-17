@@ -1,7 +1,16 @@
+<ion-content padding overflow-scroll="true">
 
+    <barcode-scanner (BarcodeScannerEvent)="getBarcodeData($event)"></barcode-scanner>
 
-<ion-content padding  overflow-scroll="true">
-<barcode-scanner></barcode-scanner>
+    <div *ngIf="showMedia">
+        <media-capture (MediaCaptureEvent)="getVideoData($event)"></media-capture>
+    </div>
 
-<media-capture></media-capture>
+    <ion-list>
+        <ion-item *ngFor="let file of mediaFiles" tappable (click)="play(file)" text-wrap>
+            {{ file.name }}
+            <p>{{ file.size / 1000 / 1000 | number }} MB</p>
+        </ion-item>
+    </ion-list>
+
 </ion-content>
